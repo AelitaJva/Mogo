@@ -125,9 +125,14 @@ h1, h2, h3, h4 {
   color: yellowgreen;
 }
 
-.nav__link:hover:after {
+.nav__link:hover:after,
+.nav__link.active::after  {
  opacity: 1;
   background-color: yellowgreen;
+}
+
+.nav__link.active {
+  color: yellowgreen;
 }
 
 /* button */
@@ -151,22 +156,41 @@ h1, h2, h3, h4 {
   color: #333;
 }
 
-/* slider
+/* slider */
 .intro__slider {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .slider__item {
-  width: 24%;
+  position: relative;
+  padding: 20px 0;
+  width: 20%;
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
+  border-top: 3px solid #fff;
+  opacity: .7;
+}
+.slider__item.active {
+  opacity: 1;
+}
 
+.slider__item.active::before {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #f38181;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 1;
 }
 
 .slider__number {
   font-size: 28px;
   font-weight: 700;
 
-} */
+}
