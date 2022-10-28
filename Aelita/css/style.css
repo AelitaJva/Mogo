@@ -151,3 +151,135 @@ position: relative;
 .nav__link:hover::after {
 opacity: 1;
 }
+
+
+/* Section */
+.section {
+ padding: 80px 0;
+}
+
+.section__header {
+  width: 100%;
+  max-width: 950px;
+ margin: 0 auto 40px;
+
+ text-align: center;
+}
+
+
+.section__subtitle {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: #333;
+
+}
+
+.section__title {
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 30px auto 30px;
+
+  background: #f38181;
+}
+
+.section__text {
+  color: #333;
+  font-size: 15px;
+}
+
+.about {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.about__item {
+  width: 380px;
+  position: relative;
+
+  background: #95e1d3;
+}
+
+.about__item:hover .about__image {
+  transform: translate3d(-10px, -10px, 0);
+}
+
+.about__item:hover .about__image img {
+opacity: .1;
+}
+
+.about__item:hover .about__text{
+  opacity: 1;
+}
+
+.about__image {
+  transition: transform .2s linear;
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.about_image img {
+  display: block;
+  transition: opacity .1 linear;
+ 
+}
+
+.about__text {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform:uppercase;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, 50%, 0);
+  transition: opacity .1 linear;
+}
+
+/* Statistics */
+
+.statistics {
+  background-color: #95e1d3;
+}
+
+.stat {
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+
+.stat__item {
+  padding: 70px 25px;
+  flex: 1 1 0;
+  border-left: 1px solid #b5eae0;
+}
+
+.stat__item:last-child {
+  border-right: 1px solid #b5eae0;
+}
+
+.stat__count {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.stat__text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
