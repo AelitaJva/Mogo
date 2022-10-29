@@ -168,6 +168,13 @@ opacity: 1;
  padding: 80px 0;
 }
 
+.section--devices {
+  background: url("../img/devices-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  padding-bottom: 0;
+}
+
 .section__header {
   width: 100%;
   max-width: 950px;
@@ -325,4 +332,25 @@ opacity: .1;
 .services__text {
   color: #999;
   font-size: 14px;
+}
+
+/* section -3 */
+
+.devices {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.devices__item {
+  display: block;
+
+}
+
+.devices__item--iphon {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 1;
 }
