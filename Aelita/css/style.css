@@ -176,6 +176,10 @@ opacity: 1;
   margin-bottom: 40px;
 }
 
+.section--gray {
+  background-color: #f8f8f8;
+}
+
 .section__header {
   width: 100%;
   max-width: 950px;
@@ -366,20 +370,34 @@ opacity: .1;
   width: 50%;
 }
 
-.wedo__img {
-  width: 570px;
-  height: 380px;
-}
 
 .accordion__item {
   border: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+}
+
+.accordion__item.active 
+.accordion__content {
+   display: block;
+}
+
+.accordion__item.active 
+.accordion__header {
+border-bottom-color: #e5e5e5;
+}
+
+.accordion__item.active 
+.accordion__header:after {
+  transform: translateY(-50%) rotate(-45deg);
+  margin-top: 5px;
 }
 
 .accordion__header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid transparent;
   padding: 15px 20px 15px 60px;
 
   position: relative;
+  cursor: pointer;
 }
 
 .accordion__header:after {
@@ -395,7 +413,7 @@ opacity: .1;
   right: 20px;
   z-index: 1;
 
-  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(135deg);
 
 }
 
@@ -414,10 +432,91 @@ opacity: .1;
   color: #999;
   font-style: italic;
   font-weight: 300;
+
+  display: none;
 }
 
 .accordion__title {
   font-size: 14px;
   color: #999;
   text-transform: uppercase;
+}
+
+/* section-5 */
+.reviews {
+  padding: 0 110px;
+  position: relative;
+}
+
+.reviews__item {
+  padding-left: 205px;
+  position: relative;
+}
+
+.reviews__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  border: 2px solid #95e1d3;
+}
+
+.reviews__text {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #999;
+}
+
+.reviews__author {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+  color: #333;
+  
+}
+
+.reviews__author:before {
+  content: "";
+
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 60px;
+  height: 3px;
+  margin-right: 10px;
+
+  background: #f38181;
+}
+
+.reviews__btn {
+  font-size: 0;
+  color: transparent;
+
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.reviews__btn:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  
+}
+
+.reviews__btn--prev {
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+.reviews__btn--next {
+  right: 0;
+  transform: rotate(135deg);
 }
