@@ -537,11 +537,6 @@ border-bottom-color: #e5e5e5;
   background: #95e1d3;
 }
 
-.card__inner {
-  position: relative;
-
-  background: #95e1d3;
-}
 
 .card__item:hover .card__image {
   transform: translate3d(-10px, -10px, 0);
