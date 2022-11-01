@@ -2,9 +2,9 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
-  line-height: 1,6;
+  line-height: 1, 6;
   color: #333;
-  
+
 }
 
 *,
@@ -13,7 +13,10 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
 
@@ -48,7 +51,7 @@ hr {
 
 }
 
-.intro__content{
+.intro__content {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -131,19 +134,19 @@ hr {
 }
 
 .nav__link {
-color: #fff;
-text-decoration: none;
-display: inline-block;
-vertical-align: top;
-margin: 0 15px;
-position: relative;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
 }
 
 .nav__link::after {
   content: "";
   width: 100%;
   height: 3px;
-  opacity: 0 ;
+  opacity: 0;
 
   background-color: yellowgreen;
   position: absolute;
@@ -154,18 +157,18 @@ position: relative;
 }
 
 .nav__link:hover {
-   color: yellowgreen;
-   transition: color .2s linear;
+  color: yellowgreen;
+  transition: color .2s linear;
 }
 
 .nav__link:hover::after {
-opacity: 1;
+  opacity: 1;
 }
 
 
 /* Section */
 .section {
- padding: 80px 0;
+  padding: 80px 0;
 }
 
 .section--devices {
@@ -183,9 +186,9 @@ opacity: 1;
 .section__header {
   width: 100%;
   max-width: 950px;
- margin: 0 auto 50px;
+  margin: 0 auto 50px;
 
- text-align: center;
+  text-align: center;
 }
 
 
@@ -237,10 +240,10 @@ opacity: 1;
 }
 
 .about__item:hover .about__image img {
-opacity: .1;
+  opacity: .1;
 }
 
-.about__item:hover .about__text{
+.about__item:hover .about__text {
   opacity: 1;
 }
 
@@ -253,14 +256,14 @@ opacity: .1;
 .about_image img {
   display: block;
   transition: opacity .1 linear;
- 
+
 }
 
 .about__text {
   width: 100%;
   font-size: 18px;
   font-weight: bold;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: #fff;
   text-align: center;
   opacity: 0;
@@ -269,7 +272,7 @@ opacity: .1;
   top: 50%;
   left: 0;
   z-index: 2;
-  transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, -50%, 0);
   transition: opacity .1 linear;
 }
 
@@ -377,18 +380,15 @@ opacity: .1;
   margin-bottom: 5px;
 }
 
-.accordion__item.active 
-.accordion__content {
-   display: block;
+.accordion__item.active .accordion__content {
+  display: block;
 }
 
-.accordion__item.active 
-.accordion__header {
-border-bottom-color: #e5e5e5;
+.accordion__item.active .accordion__header {
+  border-bottom-color: #e5e5e5;
 }
 
-.accordion__item.active 
-.accordion__header:after {
+.accordion__item.active .accordion__header:after {
   transform: translateY(-50%) rotate(-45deg);
   margin-top: 5px;
 }
@@ -475,7 +475,7 @@ border-bottom-color: #e5e5e5;
   font-family: 'Kaushan Script', cursive;
   font-size: 18px;
   color: #333;
-  
+
 }
 
 .reviews__author:before {
@@ -509,7 +509,7 @@ border-bottom-color: #e5e5e5;
 
   border-top: 2px solid #ccc;
   border-left: 2px solid #ccc;
-  
+
 }
 
 .reviews__btn--prev {
@@ -537,16 +537,21 @@ border-bottom-color: #e5e5e5;
   background: #95e1d3;
 }
 
+/* .card__inner {
+  position: relative;
+  background: #95e1d3;
+} */
+
 
 .card__item:hover .card__image {
   transform: translate3d(-10px, -10px, 0);
 }
 
 .card__item:hover .card__image img {
-opacity: .1;
+  opacity: .1;
 }
 
-.card__item:hover .card__text{
+.card__item:hover .card__text {
   opacity: 1;
 }
 
@@ -559,14 +564,14 @@ opacity: .1;
 .card_image img {
   display: block;
   transition: opacity .1 linear;
- 
+
 }
 
 .card__text {
   width: 100%;
   font-size: 18px;
   font-weight: bold;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: #fff;
   text-align: center;
   opacity: 0;
@@ -582,6 +587,9 @@ opacity: .1;
 .social {
   display: flex;
   justify-content: center;
+
+  position: relative;
+  top: -60px;
 }
 
 .social__item {
@@ -591,11 +599,11 @@ opacity: .1;
   background-color: #fce38a;
   border-right: 1px solid #f38181;
   font-size: 30px;
-   text-decoration: none;
-   color: #f38181;
-   line-height: 1;
+  text-decoration: none;
+  color: #f38181;
+  line-height: 1;
 
-   transition: background .1s linear, color .1s linear;
+  transition: background .1s linear, color .1s linear;
 }
 
 .social__item:last-child {
@@ -605,4 +613,28 @@ opacity: .1;
 .social__item:hover {
   color: #fff;
   background-color: #f38181;
+}
+
+.card__subtitle {
+  position: absolute;
+  left: 50%;
+  top: 500px;
+
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.subtitle__title {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.subtitle__text {
+  color: #999;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+
 }
