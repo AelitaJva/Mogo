@@ -183,6 +183,10 @@ hr {
   background-color: #f8f8f8;
 }
 
+.section--client {
+  background: #f5f5f5 url("../img/clients-bg.jpg");
+}
+
 .section__header {
   width: 100%;
   max-width: 950px;
@@ -525,6 +529,7 @@ hr {
 /* section-6 */
 .card {
   margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
 
@@ -536,11 +541,6 @@ hr {
 
   background: #95e1d3;
 }
-
-/* .card__inner {
-  position: relative;
-  background: #95e1d3;
-} */
 
 
 .card__item:hover .card__image {
@@ -636,5 +636,135 @@ hr {
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
+}
 
+/* Section-7 */
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* section_8 */
+
+.works {
+  display: flex;
+}
+
+.works__column {
+  flex: 1 1 0;
+}
+
+.works__item {
+  position: relative;
+
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+
+}
+
+.works__item:hover .works__img {
+  opacity: .1;
+}
+
+.works__item:hover .works__info {
+  opacity: 1;
+}
+
+.works__img {
+  transition: opacity .2s linear;
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.works__info {
+  width: 100%;
+  padding: 0 15px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+
+  text-align: center;
+  color: #fff;
+
+  transform: translate3d(0, -50%, 0);
+  transition: opacity .2 linear;
+}
+
+.works__title {
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.works__text {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.reviews__img--two {
+  border-radius: 50%;
+}
+
+.reviews__item--two {
+  padding-left: 255px;
+}
+
+/* section__10 */
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+.clients__item {
+  width: 50%;
+  position: relative;
+  padding: 0 45px 0 175px;
+  margin-bottom: 60px;
+}
+
+.clients__photo {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  z-index: 1;
+
+  height: 110px;
+  width: 110px;
+
+  border-radius: 50%;
+}
+
+.clients__name {
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.clients__prof {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #333;
+}
+
+.clients__text {
+  color: #999;
+  font-size: 15px;
+}
+
+.clients__text:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+
+  background: #f38181;
+  margin: 15px 0;
 }
