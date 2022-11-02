@@ -451,10 +451,11 @@ hr {
 .reviews {
   padding: 0 110px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .reviews__item {
-  padding-left: 205px;
+  padding-left: 255px;
   position: relative;
 }
 
@@ -465,6 +466,7 @@ hr {
   z-index: 1;
 
   border: 2px solid #95e1d3;
+  border-radius: 50%;
 }
 
 .reviews__text {
@@ -707,14 +709,6 @@ hr {
   font-style: italic;
 }
 
-.reviews__img--two {
-  border-radius: 50%;
-}
-
-.reviews__item--two {
-  padding-left: 255px;
-}
-
 /* section__10 */
 .clients {
   display: flex;
@@ -767,4 +761,96 @@ hr {
 
   background: #f38181;
   margin: 15px 0;
+}
+
+/* section__11 */
+.blog {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.blog__item {
+  width: 31%;
+}
+
+.blog__header {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.blog__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog__date {
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  z-index: 1;
+  
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+
+  background: #95e1d3;
+}
+
+.blog__date__bold {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+
+}
+
+.blog__content {
+  margin-bottom: 14px;
+}
+
+.blog__title {
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+}
+
+.blog__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog__title a:hover {
+  text-decoration: underline;
+}
+
+.blog__text {
+  color: #333;
+  font-size: 15px;
+}
+
+.blog__footer {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 14px;
+
+  font-size: 15px;
+  font-style: italic;
+  color: #999;
+
+}
+
+.blog__stat__item {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.blog__stat__item i {
+  color: #95e1d3;
 }
